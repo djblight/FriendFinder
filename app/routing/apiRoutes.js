@@ -11,7 +11,7 @@ module.exports = function(app) {
 
     // API POST-req processes user data when user submits data json input, which is pushed to the correct array
     app.post("/api/friends", function(req, res) {
-        var greatMatch = {
+        var match = {
             name: "",
             image: "",
             matchDifference: 1000
@@ -33,17 +33,17 @@ module.exports = function(app) {
                 // calculates the difference
                 totalDifference += Math.abs(parseInt(userScores[j]) - parseInt(friendData[i].scores[j]));
                 // if overall difference is less than current greatMatch
-                if (totalDifference <= greatMatch.friendDifference) {
+                if (totalDifference <= match.friendDifference) {
                     // reset greatMatch
-                    greatMatch.name = friendData[i].name;
-                    greatMatch.photo = friendData[i].photo;
-                    greatMatch.matchDifference - totalDifference;
+                    match.name = friendData[i].name;
+                    match.photo = friendData[i].photo;
+                    match.matchDifference - totalDifference;
                 }
             }
         }
 
         friendData.push(userData);
 
-        res.json(greatMatch);
+        res.json(match);
     });
 };

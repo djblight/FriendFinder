@@ -168,7 +168,7 @@
                     </div>
                     <div class="modal-body">
                         <h2 id="matchName"></h2>
-                        <img id="matchImg" src="http://static4.depositphotos.com/1017986/475/i/950/depositphotos_4759849-Surprised-woman-face.jpg" alt="">
+                        <img id="matchImg" src="" alt="">
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -227,7 +227,7 @@
             // Get AJAX result so best match is displayed
             $("#matchName").text(data.name);
             $("#matchImg").attr("src", data.photo);
-            // display Modal woth best match
+            // display Modal with best match
             $("#resultsModal").modal("toggle");
         });
     }
