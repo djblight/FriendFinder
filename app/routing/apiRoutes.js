@@ -6,7 +6,7 @@ var totalDifference = 0;
 
 module.exports = function(app) {
     app.get("/api/friends", function(req, res) {
-        re.json(friends);
+        res.json(friendData);
     });
 
     // API POST-req processes user data when user submits data json input, which is pushed to the correct array
@@ -18,31 +18,31 @@ module.exports = function(app) {
         };
         
         var userData = req.body;
-        var userName = userData;
+        var userName = userData.name;
         var userImage = userData.image;
         var userScores = userData.scores;
         var totalDifference = 0;
 
         // loops thru friends array to get each score
-        for(var i = 0; i < [friends].length-1; i++) {
-            console.log(friends[i].name);
+        for(var i = 0; i < friendData.length-1; i++) {
+            console.log(friendData[i].name);
             totalDifference = 0;
 
             // loop thru friends and users scores to calculate the absolute difference and push the result to the greatMatch variable
             for(var j = 0; j < 10; j++) {
                 // calculates the difference
-                totalDifference += Math.abs(parseInt(userScores[j]) - parseInt(friends[i].scores[j]));
+                totalDifference += Math.abs(parseInt(userScores[j]) - parseInt(friendData[i].scores[j]));
                 // if overall difference is less than current greatMatch
                 if (totalDifference <= greatMatch.friendDifference) {
                     // reset greatMatch
-                    greatMatch.name = friends[i].name;
-                    greatMatch.photo = friends[i].photo;
+                    greatMatch.name = friendData[i].name;
+                    greatMatch.photo = friendData[i].photo;
                     greatMatch.matchDifference - totalDifference;
                 }
             }
         }
 
-        friends.push(userData);
+        friendData.push(userData);
 
         res.json(greatMatch);
     });

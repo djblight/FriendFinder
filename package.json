@@ -7,9 +7,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "scripts": {
-    "start": "node server.js"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/djblight/FriendFinder.git"
@@ -19,8 +16,10 @@
   "bugs": {
     "url": "https://github.com/djblight/FriendFinder/issues"
   },
-  "homepage": "https://github.com/djblight/FriendFinder#readme"
+  "homepage": "https://github.com/djblight/FriendFinder#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "path": "^0.12.7"
+  }
 }
-
-
-
