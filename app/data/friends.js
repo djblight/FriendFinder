@@ -1,8 +1,8 @@
 
 var friends = [
        {
-          "matchName":"Ronald",
-          "matchImg":"http://img.xcitefun.net/users/2013/11/339709,xcitefun-stylish-men-haircut-lookbook-1.jpg",
+          "name":"Ronald",
+          "photo":"http://img.xcitefun.net/users/2013/11/339709,xcitefun-stylish-men-haircut-lookbook-1.jpg",
           "scores":[
              4,
              3,
@@ -17,8 +17,8 @@ var friends = [
               ]
         },
         {
-           "matchName":"Jackie",
-           "matchImg":"http://www.ipadairwallpapers.com/wp-content/uploads/People/Woman%20iPad%20Air%20Wallpapers%20HD%2035.jpg",
+           "name":"Jackie",
+           "photo":"http://www.ipadairwallpapers.com/wp-content/uploads/People/Woman%20iPad%20Air%20Wallpapers%20HD%2035.jpg",
            "scores":[
              3,
              5,
@@ -33,8 +33,8 @@ var friends = [
               ]
         },
         {
-            "matchName":"Thomas",
-            "matchImg":"https://www.bellanaija.com/wp-content/uploads/2015/08/dreamstime_l_37429086.jpg",
+            "name":"Thomas",
+            "photo":"https://www.bellanaija.com/wp-content/uploads/2015/08/dreamstime_l_37429086.jpg",
             "scores":[
              5,
              4,
@@ -49,8 +49,8 @@ var friends = [
               ]
         },
         {
-            "matchName":"Eileen",
-            "matchImg":"http://discov-her.com/system/images/pictures/000/000/276/fb/fwis-loreal-paris-luxembourg-and-silicon-valley-itinerary-of-a-woman-entrepreneur-276.jpg",
+            "name":"Eileen",
+            "photo":"http://discov-her.com/system/images/pictures/000/000/276/fb/fwis-loreal-paris-luxembourg-and-silicon-valley-itinerary-of-a-woman-entrepreneur-276.jpg",
             "scores":[
              5,
              4,
@@ -65,8 +65,8 @@ var friends = [
               ]
         },
         {
-            "matchName":"Terrence",
-            "matchImg":"http://www.kloud9.co.za/wp-content/uploads/2015/10/Eduard-Kettner-Men%E2%80%99s-Blazer-Colour-Blue-with-red-scotch-1.jpg",
+            "name":"Terrence",
+            "photo":"http://www.kloud9.co.za/wp-content/uploads/2015/10/Eduard-Kettner-Men%E2%80%99s-Blazer-Colour-Blue-with-red-scotch-1.jpg",
             "scores":[
              4,
              4,
@@ -81,8 +81,8 @@ var friends = [
               ]
         },
         {
-            "matchName":"Ruby",
-            "matchImg":"http://deepword.com/wp-content/uploads/2013/01/WomanPhoneCropped.png",
+            "name":"Ruby",
+            "photo":"http://deepword.com/wp-content/uploads/2013/01/WomanPhoneCropped.png",
             "scores":[
              5,
              2,
@@ -97,8 +97,8 @@ var friends = [
               ]
         },
         {
-            "matchName":"Gerald",
-            "matchImg":"http://assets.myntassets.com/v1/images/style/properties/Flying-Machine-Men-Black-Casual-Shirt_32f819641e53b63e6391d4c29400b14c_images.JPG",
+            "name":"Gerald",
+            "photo":"http://assets.myntassets.com/v1/images/style/properties/Flying-Machine-Men-Black-Casual-Shirt_32f819641e53b63e6391d4c29400b14c_images.JPG",
             "scores":[
              1,
              2,
@@ -113,8 +113,8 @@ var friends = [
               ]
         },
         {
-            "matchName":"Trinity",
-            "matchImg":"https://www.theworkher.com/wp-content/uploads/2014/09/Melanie-Perkins-CEO-Canva.jpg",
+            "name":"Trinity",
+            "photo":"https://www.theworkher.com/wp-content/uploads/2014/09/Melanie-Perkins-CEO-Canva.jpg",
             "scores":[
              5,
              5,
@@ -129,8 +129,8 @@ var friends = [
               ]
         },
         {
-            "matchName":"Roland",
-            "matchImg":"https://i.vimeocdn.com/video/45692050_1280x960.jpg",
+            "name":"Roland",
+            "photo":"https://i.vimeocdn.com/video/45692050_1280x960.jpg",
             "scores":[
              3,
              1,
@@ -145,8 +145,8 @@ var friends = [
               ]
         },
         {
-            "matchName":"Charlotte",
-            "matchImg":"https://www.fashiongonerogue.com/wp-content/uploads/2015/12/Bianca-Balti-Woman-Spain-December-2015-Cover-Editorial05.jpg",
+            "name":"Charlotte",
+            "photo":"https://www.fashiongonerogue.com/wp-content/uploads/2015/12/Bianca-Balti-Woman-Spain-December-2015-Cover-Editorial05.jpg",
             "scores":[
              5,
              3,
