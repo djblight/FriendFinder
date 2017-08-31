@@ -28,13 +28,13 @@ module.exports = function(app) {
             console.log(friendData[i].name);
             totalDifference = 0;
 
-            // loop thru friends and users scores to calculate the absolute difference and push the result to the greatMatch variable
+            // loop thru friends and users scores to calculate the absolute difference and push the result to the match variable
             for(var j = 0; j < 10; j++) {
                 // calculates the difference
                 totalDifference += Math.abs(parseInt(userScores[j]) - parseInt(friendData[i].scores[j]));
                 // if overall difference is less than current greatMatch
                 if (totalDifference <= match.friendDifference) {
-                    // reset greatMatch
+                    // reset match
                     match.name = friendData[i].name;
                     match.photo = friendData[i].photo;
                     match.matchDifference - totalDifference;
