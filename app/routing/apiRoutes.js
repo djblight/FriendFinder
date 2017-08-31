@@ -33,11 +33,14 @@ module.exports = function(app) {
                 // calculates the difference
                 totalDifference += Math.abs(parseInt(userScores[j]) - parseInt(friendData[i].scores[j]));
                 // if overall difference is less than current greatMatch
-                if (totalDifference <= match.friendDifference) {
+                if (totalDifference <= match.matchDifference) {
                     // reset match
                     match.name = friendData[i].name;
                     match.photo = friendData[i].photo;
-                    match.matchDifference - totalDifference;
+                    match.matchDifference = totalDifference;
+                if (j == 9) {
+                console.log(friendData[i].name + " difference is:" + totalDifference)
+                }
                 }
             }
         }
